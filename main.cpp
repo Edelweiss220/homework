@@ -107,7 +107,7 @@ int main(){
                 for (;i<arr1Size; i=i+1){
                     std::cout<<"Array position= "<<i<<" Array value= "<<arr1[i]<<" Cell aderss= "<<&arr1[i]<<std::endl;
                 }
-    sumOfArr(arr1,arr1Size);
+    sumOfArr(arr1,arr1Size); 
 
     //Вычисление среднего балла. Спрашиваем у пользователя количество оценок, в динамической памяти выделяем память под массив (оператор new) Пользователь заполняет массив оценками, высчитываем средний балл, выводим его пользователю.
 
@@ -118,7 +118,7 @@ int main(){
     
             int* arr2=new int[quantityOfStudentGrades]; // веделяю массив
                 int* arr2Begin=arr2; // указатель на начало масиива
-                std::cout<<"Array volume ="<<sizeof(arr2)<<std::endl;
+                std::cout<<"Array volume ="<<sizeof(arr2)<<std::endl;  // Посмотреть сколько на вашей машине с вашим компилятором весит указатель (сколько места занимает адрес ячейки памяти)
                 std::cout<<"Enter "<<quantityOfStudentGrades<<" greades one by one (obly digits pelease)"<<std::endl;
                 int k=0;
                 while (k<quantityOfStudentGrades){
